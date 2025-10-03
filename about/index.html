@@ -28,8 +28,8 @@
   <meta name="twitter:description" content="Official bio, verified links, selected writing, and contact.">
   <meta name="twitter:image" content="https://2.gravatar.com/avatar/cd3fbe17f1bf77fa207a82a74709f11c0e55fe56d032d3056a29166d42672a60?s=1200">
 
-  <!-- Optional brand color -->
-  <meta name="theme-color" content="#FAD9E6">
+  <!-- Optional brand color for some UAs -->
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Performance: preload headshot to improve LCP -->
   <link rel="preload" as="image" href="https://2.gravatar.com/avatar/cd3fbe17f1bf77fa207a82a74709f11c0e55fe56d032d3056a29166d42672a60?s=184">
@@ -41,52 +41,54 @@
   <link rel="alternate" hreflang="nl" href="https://jessicalavrov.com/nl/over/">
   -->
 
-  <!-- Minimal, feminine styling -->
+  <!-- Minimal, neutral styling to match the homepage -->
   <style>
     :root{
-      --bg:#fff; --ink:#1f1f1f; --muted:#5b5b5b;
-      --accent:#f48fb1;      /* rosy pink */
-      --accent-2:#ffe6ef;    /* soft blush */
-      --ring:#ffd1e1;        /* focus ring */
-      --card:#ffffff; --max: 880px; --radius: 14px;
-      --shadow: 0 10px 30px rgba(244,143,177,.18);
+      --bg:#ffffff;
+      --ink:#111111;
+      --muted:#555555;
+      --card:#ffffff;
+      --border:#e5e7eb;
+      --max:880px;
+      --radius:12px;
+      --shadow:0 1px 2px rgba(0,0,0,0.04);
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
-    a{color:#b00063;text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{ text-decoration: underline; }
+    a:hover{ opacity:.9 }
     .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
-    header{display:flex;align-items:center;gap:18px;margin:8px 0 18px}
-    header .dot{width:44px;height:44px;border-radius:50%;background:var(--accent-2);display:grid;place-items:center;box-shadow:var(--shadow)}
-    header .dot span{font-size:22px}
-    header .title{display:flex;flex-direction:column}
+    header{display:flex;align-items:center;gap:12px;margin:8px 0 18px}
     header h1{font-size:28px;line-height:1.2;margin:0}
     header .subtitle{color:var(--muted);font-size:15px}
-    .hero{background:linear-gradient(0deg,var(--card),var(--accent-2));border-radius:var(--radius);padding:22px;border:1px solid var(--ring);box-shadow:var(--shadow)}
+    .hero{background:var(--card);border-radius:var(--radius);padding:22px;border:1px solid var(--border);box-shadow:var(--shadow)}
     .hero p{margin:.5rem 0}
-    nav.toc{margin:18px 0 0; padding:14px; border:1px dashed var(--ring); border-radius:10px; background:#fff}
+    nav.toc{margin:18px 0 0; padding:14px; border:1px dashed var(--border); border-radius:10px; background:#fff}
     nav.toc a{margin-right:10px}
     .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
     @media(min-width:880px){.grid{grid-template-columns:1.2fr .8fr}}
-    section{background:var(--card);border:1px solid #f4e4ea;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
     h2{font-size:22px;margin:0 0 10px}
     h3{font-size:18px;margin:16px 0 6px}
     ul{margin:0 0 0 20px;padding:0}
-    .tag{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;background:var(--accent-2);border:1px solid var(--ring);margin:2px 6px 0 0}
     .links a{display:inline-block;margin:6px 10px 6px 0}
     .note{font-size:14px;color:var(--muted)}
-    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border-radius:999px;padding:10px 16px;border:0;box-shadow:var(--shadow)}
-    .btn:hover{filter:brightness(.97)}
-    .card{border:1px solid #f3d7e3;border-radius:12px;padding:12px;margin:10px 0}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      background:transparent;color:var(--ink);
+      border-radius:8px;padding:10px 14px;border:1px solid var(--ink);
+    }
+    .btn:hover{background:#f6f6f6}
+    .card{border:1px solid var(--border);border-radius:10px;padding:12px;margin:10px 0}
     .faq summary{cursor:pointer;font-weight:600}
-    .faq details{border:1px solid #f3d7e3;border-radius:12px;padding:14px;margin:8px 0;background:#fff}
+    .faq details{border:1px solid var(--border);border-radius:10px;padding:14px;margin:8px 0;background:#fff}
     .sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
     .muted{color:var(--muted)}
     footer{margin-top:28px;color:var(--muted);font-size:14px}
-    img.round{border-radius:14px;max-width:100%;height:auto;border:1px solid #f4e4ea}
+    img.round{border-radius:12px;max-width:100%;height:auto;border:1px solid var(--border)}
   </style>
 
-  <!-- Structured Data: ProfilePage + Person (critical for entity) -->
+  <!-- Structured Data: ProfilePage + Person -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -143,7 +145,7 @@
   }
   </script>
 
-  <!-- Structured Data: FAQPage (brand-SERP disambiguation) -->
+  <!-- Structured Data: FAQPage -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -184,7 +186,6 @@
 
   <div class="wrap">
     <header>
-      <div class="dot" aria-hidden="true"><span>♡</span></div>
       <div class="title">
         <h1>Jessica Lavrov - Official Bio &amp; Verified Links</h1>
         <div class="subtitle">Warm, practical tech with a feminine touch ✨</div>
@@ -192,15 +193,15 @@
     </header>
 
     <div class="hero">
-      <p><strong>Hi, I’m Jessica Lavrov 💗</strong>. I am a Colorado-based <strong>IT specialist</strong>, <strong>writer</strong>, and <strong>cybersecurity/reputation consultant</strong> who loves building things that feel smooth, human, and genuinely helpful. I write about <strong>privacy</strong>, <strong>open protocols</strong>, and <strong>digital clarity</strong>, then put those ideas to work in friendly, real world products.</p>
+      <p><strong>Hi, I am Jessica Lavrov.</strong> I am a Colorado-based <strong>IT specialist</strong>, <strong>writer</strong>, and <strong>cybersecurity/reputation consultant</strong> who loves building things that feel smooth, human, and genuinely helpful. I write about <strong>privacy</strong>, <strong>open protocols</strong>, and <strong>digital clarity</strong>, then put those ideas to work in friendly, real world products.</p>
       <p class="muted">I am half Dutch and half Puerto Rican. I speak some Russian, <em>un poquito de español</em>, and I am learning Dutch. And yes: Lavrov, but not that Lavrov.</p>
       <p><em>Not related to Sergey Lavrov; I am a U.S.-based IT specialist and writer.</em> For official info, the home of <a href="https://jessicalavrov.com/">Jessica Lavrov</a> is this website.</p>
 
-      <!-- Table of contents for scannability (imports cleanly to Medium) -->
+      <!-- Table of contents -->
       <nav class="toc" aria-label="Table of contents">
         <strong>Quick nav:</strong>
         <a href="#short-version">Short version</a>
-        <a href="#focus-now">What I’m focused on now</a>
+        <a href="#focus-now">What I am focused on now</a>
         <a href="#selected-writing">Selected writing</a>
         <a href="#past-highlights">Past highlights</a>
         <a href="#official-links">Official links</a>
@@ -212,24 +213,24 @@
     <div class="grid" id="main">
       <!-- Main column -->
       <main>
-        <!-- H2: Short version (2–3 sentences) -->
+        <!-- H2: Short version -->
         <section aria-labelledby="short-version" id="short-version">
           <h2>Short version</h2>
           <p>I am <strong>Jessica Lavrov</strong>. I work as an <strong>IT specialist</strong>, <strong>writer</strong>, and <strong>cybersecurity/reputation consultant</strong> with a focus on privacy, open protocols, iOS, and thoughtful UI/UX. I turn complex tech into warm, practical guides and ship small tools that feel soft but precise so people stay in control online.</p>
         </section>
 
-        <!-- H2: What I’m focused on now -->
+        <!-- H2: What I am focused on now -->
         <section aria-labelledby="focus-now" id="focus-now">
-          <h2>What I’m focused on now</h2>
+          <h2>What I am focused on now</h2>
           <ul>
-            <li><strong>Privacy &amp; open protocols</strong>: practical guides and advocacy for interoperable, user first tech.</li>
+            <li><strong>Privacy and open protocols</strong>: practical guides and advocacy for interoperable, user first tech.</li>
             <li><strong>Personal security</strong>: consulting on SIM swap prevention, account hardening, and reputation repair after breaches.</li>
             <li><strong>Digital clarity</strong>: essays and checklists that replace buzzwords with calm, confident steps.</li>
           </ul>
-          <div class="note">P.S. I keep a friendly little AI assistant on my GitHub Pages. <a href="https://jessica-lavrov.github.io">Scroll to the bottom and say hi</a> 💬</div>
+          <div class="note">P.S. I keep a friendly little AI assistant on my GitHub Pages. <a href="https://jessica-lavrov.github.io">Scroll to the bottom and say hi</a>.</div>
         </section>
 
-        <!-- H2: Selected writing — 6 items, one line each -->
+        <!-- H2: Selected writing -->
         <section aria-labelledby="selected-writing" id="selected-writing">
           <h2>Selected writing (start here)</h2>
 
@@ -288,13 +289,6 @@
             width="184" height="184"
             alt="Jessica Lavrov, Colorado-based IT specialist, writer, and consultant"
             loading="lazy" decoding="async">
-          <div class="tags" aria-label="Page topics">
-            <span class="tag">privacy</span>
-            <span class="tag">open protocols</span>
-            <span class="tag">cybersecurity</span>
-            <span class="tag">reputation</span>
-            <span class="tag">digital clarity</span>
-          </div>
         </section>
 
         <!-- FAQ -->
