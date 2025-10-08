@@ -16,10 +16,11 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:locale:alternate" content="nl_NL" />
 
-  <link rel="canonical" href="https://jessicalavrov.com/index-es.html" />
-  <link rel="alternate" hreflang="en" href="https://jessicalavrov.com/index.html" />
-  <link rel="alternate" hreflang="es" href="https://jessicalavrov.com/index-es.html" />
-  <link rel="alternate" hreflang="nl" href="https://jessicalavrov.com/index-nl.html" />
+<link rel="canonical" href="https://jessicalavrov.com/index-es.html">
+<link rel="alternate" hreflang="en" href="https://jessicalavrov.com/">
+<link rel="alternate" hreflang="es" href="https://jessicalavrov.com/index-es.html">
+<link rel="alternate" hreflang="nl" href="https://jessicalavrov.com/index-nl.html">
+<link rel="alternate" hreflang="x-default" href="https://jessicalavrov.com/">
 
   <link rel="preconnect" href="https://2.gravatar.com" crossorigin>
   <link rel="preconnect" href="https://icons.duckduckgo.com" crossorigin>
