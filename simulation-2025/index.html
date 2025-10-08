@@ -37,8 +37,7 @@
 
   <style>
     :root{
-      --bg-top:#101426;--bg-mid:#0b0f1d;--bg-btm:#080b14;
-      --panel:#0f1420;--ink:#eaf1ff;--muted:#9fb0c8;--line:#1c2534;
+      --bg:#0e1322;--panel:#0f1420;--ink:#eaf1ff;--muted:#9fb0c8;--line:#1c2534;
       --brand:linear-gradient(90deg,#7dd3fc 0%,#a78bfa 45%,#fca5a5 100%);
       --glow:0 10px 40px rgba(125,211,252,.15),0 0 0 1px rgba(167,139,250,.06) inset;
       --wrap:760px;--radius:18px;--radius-sm:12px;
@@ -47,15 +46,13 @@
     }
     @media (prefers-color-scheme: light){
       :root{
-        --bg-top:#eef2ff;--bg-mid:#e8ecfb;--bg-btm:#dde2f7;
-        --panel:#ffffff;--ink:#101322;--muted:#55637a;--line:#dbe2f2;
+        --bg:#eef2ff;--panel:#ffffff;--ink:#101322;--muted:#55637a;--line:#dbe2f2;
         --btn-bg:#0f1420;--btn-text:#ffffff;--btn-hover:#1a2540;
       }
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
+    html,body{height:100%;background:var(--bg)}
     body{
-      background:linear-gradient(to bottom,var(--bg-top),var(--bg-mid) 50%,var(--bg-btm) 100%);
       color:var(--ink);
       font:18px/1.65 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
       -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
@@ -81,11 +78,12 @@
     .video{
       position:relative;width:100%;padding-top:var(--yt-ratio);
       border:1px solid var(--line);border-radius:var(--radius-sm);
-      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0));
-      box-shadow:var(--glow);overflow:hidden;margin:1.5rem 0;
+      background:#000;box-shadow:var(--glow);overflow:hidden;margin:1.5rem 0;
     }
-    .video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;background:#000}
-    footer .foot-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+    .video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+    .nav-bottom{margin-top:2rem;display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+    .nav-bottom a{display:inline-block;padding:.6rem 1.2rem;border-radius:var(--radius-sm);background:var(--btn-bg);color:var(--btn-text);border:1px solid var(--line);box-shadow:var(--glow);font-weight:600}
+    .nav-bottom a:hover{background:var(--btn-hover)}
   </style>
 
   <script type="application/ld+json">
@@ -118,8 +116,8 @@
         <p class="deck">Simulation 2025 • AI, computation, and the seams of reality</p>
         <p class="meta">Published October 09, 2025 • Author: Jessica Lavrov</p>
         <div class="btn-row">
-          <a class="btn" href="https://jessicalavrov.com" rel="noopener">Home</a>
-          <a class="btn" href="https://jessicalavrov.com/about/" rel="noopener">About</a>
+          <a class="btn" href="https://jessicalavrov.com">Home</a>
+          <a class="btn" href="https://jessicalavrov.com/about/">About</a>
         </div>
       </div>
     </div>
@@ -153,6 +151,12 @@
 
           <p>If we are more likely to wake up inside a civilization than outside one, then hacking the matrix starts as a civic project. Not a heist, a literacy campaign. Teach machines to read the fine print of reality; teach ourselves to read what they read. Whether the verdict is atoms all the way down or algorithms all the way in, the work will enlarge us. That is the only cheat code that ever mattered.</p>
         </section>
+
+        <div class="nav-bottom">
+          <a href="https://jessicalavrov.com">← Back to Home</a>
+          <a href="https://jessicalavrov.com/about/">About</a>
+          <a href="https://jessicalavrov.com/bitcoin-ai-utopia/">Next Article →</a>
+        </div>
       </article>
     </div>
   </main>
@@ -163,8 +167,8 @@
         <div class="foot-row">
           <div>© 2025 Jessica Lavrov</div>
           <div class="btn-row">
-            <a class="btn" href="https://jessicalavrov.com" rel="noopener">Home</a>
-            <a class="btn" href="https://jessicalavrov.com/about/" rel="noopener">About</a>
+            <a class="btn" href="https://jessicalavrov.com">Home</a>
+            <a class="btn" href="https://jessicalavrov.com/about/">About</a>
           </div>
         </div>
       </div>
