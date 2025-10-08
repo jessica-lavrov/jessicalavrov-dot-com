@@ -9,7 +9,7 @@
   <meta name="color-scheme" content="light dark" />
 
   <meta property="og:title" content="Jessica Lavrov — Officiële website" />
-  <meta property="og:description" content="Geverifieerde links, eigen artikelen, assistent en advies voor cybersecurity en AI." />
+  <meta property="og:description" content="Geverifieerde links, eigen artikelen, assistent en advies voor cybersecurity, privacy, open protocollen en AI." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://2.gravatar.com/avatar/cd3fbe17f1bf77fa207a82a74709f11c0e55fe56d032d3056a29166d42672a60?s=600" />
   <meta property="og:locale" content="nl_NL" />
@@ -84,8 +84,8 @@
     @media (min-width: 960px){.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}.span12{grid-column:span 12}}
     .card h2{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:.25px;color:var(--muted)}
     .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin:0;padding:0;list-style:none}
-    .link{display:flex;align-items:center;gap:.8rem;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink);background:var(--panel);height:68px}
-    .bubble{flex:0 0 36px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:#121b33;overflow:hidden}
+    .link{display:flex;align-items:center;gap:.8rem;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink);background:var(--panel);height:var(--btn-h)}
+    .bubble{flex:0 0 var(--bubble);width:var(--bubble);height:var(--bubble);display:flex;align-items:center;justify-content:center;border-radius:12px;background:#121b33;overflow:hidden}
     .logo,.svg-logo{width:18px;height:18px;display:block}
     .icon{display:none}
     .bubble.fallback .logo{display:none}
@@ -120,7 +120,7 @@
 
     <section class="grid" aria-label="Inhoud">
       <article class="card span8">
-        <h2>Schrijven en artikelen</h2>
+        <h2>Schrijven & longform</h2>
         <ul class="links">
           <li><a class="link" href="https://medium.com/@jessicalavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/medium.com.ico" alt=""></span><span class="label">Medium<span class="meta">Essays over product, privacy en open standaarden</span></span></a></li>
           <li><a class="link" href="https://jessicalavrov.substack.com/" target="_blank" rel="noopener"><span class="bubble"><svg class="svg-logo" viewBox="0 0 256 256" aria-hidden="true"><rect width="256" height="256" rx="48" fill="#FF6719"/><path fill="#fff" d="M52 76h152v28H52zm0 40h152v28H52zm0 40h76v28H52z"/></svg></span><span class="label">Substack<span class="meta">Nieuwsbrief met reacties</span></span></a></li>
@@ -133,10 +133,48 @@
       <article class="card span4">
         <h2>Praat met mijn assistent</h2>
         <p class="copy">
-          Vraag die ik nog niet heb behandeld? De assistent weet welke links echt zijn en waar de rest staat.<br>
+          Heb je een vraag die ik nog niet heb behandeld? De assistent weet welke links echt zijn en waar de rest staat.<br>
           <a class="cta" href="https://jessica-lavrov.github.io" target="_blank" rel="noopener">Chat met de assistent</a><br>
-          <span class="note">Tip: scroll onderaan op de pagina.</span>
+          <span class="note">Tip: scroll helemaal naar beneden op de pagina.</span>
         </p>
+      </article>
+
+      <article class="card span6">
+        <h2>Sociaal</h2>
+        <ul class="links">
+          <li><a class="link" href="https://x.com/jessica_lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/x.com.ico" alt=""></span><span class="label">X / Twitter<span class="meta">Snelle takes en threads</span></span></a></li>
+          <li><a class="link" href="https://instagram.com/jessica.lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/instagram.com.ico" alt=""></span><span class="label">Instagram<span class="meta">Foto’s, prototypes, BTS</span></span></a></li>
+          <li><a class="link" href="https://www.tiktok.com/@jessica.lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/tiktok.com.ico" alt=""></span><span class="label">TikTok<span class="meta">Korte clips met vaart</span></span></a></li>
+          <li><a class="link" href="https://threads.net/@jessica.lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/threads.net.ico" alt=""></span><span class="label">Threads<span class="meta">Tekstfeed van Meta</span></span></a></li>
+          <li><a class="link" href="https://truthsocial.com/@jessica_lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/truthsocial.com.ico" alt=""></span><span class="label">Truth Social<span class="meta">Alternatieve aanwezigheid</span></span></a></li>
+          <li><a class="link" href="https://www.tumblr.com/jessica-lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/tumblr.com.ico" alt=""></span><span class="label">Tumblr<span class="meta">Moodboard voor laat op de avond</span></span></a></li>
+          <li><a class="link" href="https://pinterest.com/jessica_lavrov/" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/pinterest.com.ico" alt=""></span><span class="label">Pinterest<span class="meta">Visuele notities</span></span></a></li>
+          <li><a class="link" href="https://jessica-lavrov.bsky.social" target="_blank" rel="me noopener"><span class="bubble"><svg class="svg-logo" viewBox="0 0 256 256" aria-hidden="true"><path fill="#1185FE" d="M128 116c32-52 76-76 108-84-24 46-36 86-12 128-36-8-66-24-96-44-30 20-60 36-96 44 24-42 12-82-12-128 32 8 76 32 108 84z"/></svg></span><span class="label">Bluesky<span class="meta">Gerichte feed</span></span></a></li>
+          <li><a class="link" href="https://mastodon.social/@jessica_lavrov" target="_blank" rel="me noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/mastodon.social.ico" alt=""></span><span class="label">Mastodon<span class="meta">Vriendelijke buren</span></span></a></li>
+          <li><a class="link" href="https://www.youtube.com/@jessica_lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/youtube.com.ico" alt=""></span><span class="label">YouTube<span class="meta">Uitleg en demo’s</span></span></a></li>
+        </ul>
+      </article>
+
+      <article class="card span6">
+        <h2>Bouwen & lanceren</h2>
+        <ul class="links">
+          <li><a class="link" href="https://github.com/jessica-lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/github.com.ico" alt=""></span><span class="label">GitHub<span class="meta">Repos, PR’s en commits</span></span></a></li>
+          <li><a class="link" href="https://stackoverflow.com/users/31605603/jessica-lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/stackoverflow.com.ico" alt=""></span><span class="label">Stack Overflow<span class="meta">Antwoorden en vragen</span></span></a></li>
+          <li><a class="link" href="https://producthunt.com/@jessica_lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/producthunt.com.ico" alt=""></span><span class="label">Product Hunt<span class="meta">Launches en ship-it-momenten</span></span></a></li>
+          <li><a class="link" href="https://news.ycombinator.com/user?id=jessica_lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico" alt=""></span><span class="label">Hacker News<span class="meta">De oranje site</span></span></a></li>
+          <li><a class="link" href="https://gravatar.com/jessicalavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/gravatar.com.ico" alt=""></span><span class="label">Gravatar<span class="meta">Zodat apps me herkennen</span></span></a></li>
+          <li><a class="link" href="https://linkedin.com/in/jessica-lavrov/" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/linkedin.com.ico" alt=""></span><span class="label">LinkedIn<span class="meta">Netjes voor recruiters</span></span></a></li>
+          <li><a class="link" href="https://www.crunchbase.com/person/jessica-lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/crunchbase.com.ico" alt=""></span><span class="label">Crunchbase<span class="meta">Bedrijf & persoon</span></span></a></li>
+          <li><a class="link" href="https://jessica-lavrov.github.io" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/github.io.ico" alt=""></span><span class="label">Assistent<span class="meta">Vraag maar raak (onderaan)</span></span></a></li>
+        </ul>
+      </article>
+
+      <article class="card span6">
+        <h2>Vragen & discussies</h2>
+        <ul class="links">
+          <li><a class="link" href="https://www.quora.com/profile/Jessica-Lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/quora.com.ico" alt=""></span><span class="label">Quora<span class="meta">Antwoorden, kaders, lange discussies</span></span></a></li>
+          <li><a class="link" href="https://www.reddit.com/user/JessicaLavrov/" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/reddit.com.ico" alt=""></span><span class="label">Reddit<span class="meta">Threads, debat, linkposts</span></span></a></li>
+        </ul>
       </article>
 
       <article class="card span8">
@@ -145,29 +183,35 @@
           <li>
             <a class="link" href="https://jessicalavrov.com/simulation-2025/">
               <span class="bubble"><span class="icon">🧪</span></span>
-              <span class="label">AI is de cheatcode van de Matrix die je niet mocht vinden<span class="meta">Nieuw artikel • 9 okt 2025</span></span>
+              <span class="label">AI is de cheatcode van de Matrix die je niet mocht vinden
+                <span class="meta">Nieuw artikel • 9 okt 2025</span>
+              </span>
             </a>
           </li>
           <li>
             <a class="link" href="https://jessicalavrov.com/bitcoin-ai-utopia/">
               <span class="bubble"><span class="icon">₿</span></span>
-              <span class="label">Kan hard geld en AI centrale planning laten werken?<span class="meta">Artikel op de site • 4 okt 2025</span></span>
+              <span class="label">Kan hard geld en AI centrale planning laten werken?
+                <span class="meta">Artikel op de site • 4 okt 2025</span>
+              </span>
             </a>
           </li>
           <li>
             <a class="link" href="https://jessicalavrov.com/about/">
               <span class="bubble"><span class="icon">📝</span></span>
-              <span class="label">Over Jessica Lavrov<span class="meta">Artikel op de site • 3 okt 2025</span></span>
+              <span class="label">Over Jessica Lavrov
+                <span class="meta">Artikel op de site • 3 okt 2025</span>
+              </span>
             </a>
           </li>
         </ul>
-        <p class="note">Ik publiceer eerst hier en syndiceer daarna met rel="canonical" terug naar dit domein.</p>
+        <p class="note">Eerst publiceer ik hier, daarna verschijnt een kopie met <code>rel="canonical"</code> terug naar dit domein.</p>
       </article>
 
       <article class="card span4">
         <h2>Consultancy & services</h2>
-        <p class="copy">Persoonlijke cybersecurity, privacy-instellingen, datamakelaars verwijderen, apparaten hardenen, reactie op doxxing/imitatie, reputatie opschonen en AI-automatisering. Ook maatwerk AI-workers, private RAG en on-device assistenten.</p>
-        <p class="copy">Mail <a href="mailto:pr@jessicalavrov.com">pr@jessicalavrov.com</a>. Een AI filtert spam, dus kort en duidelijk helpt.</p>
+        <p class="copy">Persoonlijke cybersecurity, privacy-instellingen, datamakelaars verwijderen, devices hardenen, reactie op doxxing en imitatie, reputatie opschonen en AI-automatisering. Ook maatwerk AI-workers, privé-RAG en on-device assistenten.</p>
+        <p class="copy">Mail <a href="mailto:pr@jessicalavrov.com">pr@jessicalavrov.com</a>. Een AI filtert spam; kort en duidelijk helpt.</p>
       </article>
 
       <article class="card span12">
@@ -184,12 +228,12 @@
 
     <section class="card span12" style="margin-top:16px">
       <h2>Kleine persoonlijke noot</h2>
-      <p class="copy">Ik bouw graag dingen die soepel en menselijk aanvoelen. Werk je aan iets dat zorg vraagt? Ik help graag als consultant of bouwer. Focus op iOS, prettige UI/UX en AI waar het echt helpt.</p>
+      <p class="copy">Ik bouw graag dingen die soepel en menselijk aanvoelen. Werk je aan iets dat aandacht verdient? Ik help graag als consultant of bouwer. Focus op iOS, prettige UI/UX en AI waar het echt waarde toevoegt.</p>
     </section>
 
     <section class="card span12" style="margin-top:16px">
       <h2>Nog één ding</h2>
-      <p class="copy">Als je tot hier las, zijn we vast een match. Sla deze pagina op, zeg hallo op socials of vraag de <a href="https://jessica-lavrov.github.io" target="_blank" rel="noopener">assistent</a> iets.</p>
+      <p class="copy">Als je tot hier hebt gelezen, zijn we waarschijnlijk een match. Sla deze pagina op, zeg hallo op socials of vraag de <a href="https://jessica-lavrov.github.io" target="_blank" rel="noopener">assistent</a> iets.</p>
     </section>
 
     <p class="footer">© <span id="y"></span> Jessica Lavrov • alle officiële links hierboven • gehost op Cloudflare</p>
