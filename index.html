@@ -123,13 +123,13 @@
     .card h2{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:.25px;color:var(--muted)}
     .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin:0;padding:0;list-style:none}
     .links.onecol{grid-template-columns:1fr}
-    .link{display:flex;align-items:center;gap:.8rem;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink);background:var(--panel);height:var(--btn-h)}
+    .link{display:flex;align-items:center;gap:.8rem;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink);background:var(--panel);height:var(--btn-h);min-width:0}
     .bubble{flex:0 0 var(--bubble);width:var(--bubble);height:var(--bubble);display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--link-h);overflow:hidden}
     .logo,.svg-logo{width:18px;height:18px;display:block}
     .icon{display:none}
     .bubble.fallback .logo{display:none}
     .bubble.fallback .icon{display:block}
-    .label{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .label{display:block;white-space:normal;overflow-wrap:anywhere}
     .meta{display:block;font-size:12px;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
     .chip{padding:8px 12px;background:var(--chip-bg);border:1px solid var(--line);border-radius:999px;font-size:13px;white-space:nowrap}
@@ -161,7 +161,7 @@
       <article class="card span8">
         <h2>Writing & Longform</h2>
         <ul class="links">
-          <li><a class="link" href="https://medium.com/@jessicalavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/medium.com.ico" data-alt1="https://www.google.com/s2/favicons?domain=medium.com&sz=64" data-alt2="https://api.faviconkit.com/medium.com/64" alt=""><span class="icon">✍️</span></span><span class="label">Medium<span class="meta">Essays on product, privacy, open standards</span></span></a></li>
+          <li><a class="link" href="https://medium.com/@jessicalavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/medium.com.ico" data-alt1="https://www.google.com/s2/favicons?domain=medium.com&sz=64" data-alt2="https://api.faviconkit.com/medium.com/64" alt=""><span class="icon">✍️</span></span><span class="label">Medium<span class="meta">Essays on product, privacy, and open standards</span></span></a></li>
           <li><a class="link" href="https://jessicalavrov.substack.com/" target="_blank" rel="noopener"><span class="bubble"><svg class="svg-logo" viewBox="0 0 256 256" aria-hidden="true"><rect width="256" height="256" rx="48" fill="#FF6719"/><path fill="#fff" d="M52 76h152v28H52zm0 40h152v28H52zm0 40h76v28H52z"/></svg><span class="icon">📰</span></span><span class="label">Substack<span class="meta">Newsletter with replies welcome</span></span></a></li>
           <li><a class="link" href="https://jessicalavrov.wordpress.com/" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/wordpress.com.ico" data-alt1="https://www.google.com/s2/favicons?domain=wordpress.com&sz=64" data-alt2="https://api.faviconkit.com/wordpress.com/64" alt=""><span class="icon">🌐</span></span><span class="label">WordPress<span class="meta">Links, projects, contact</span></span></a></li>
           <li><a class="link" href="https://jessica-lavrov.blogspot.com/" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/blogspot.com.ico" data-alt1="https://www.google.com/s2/favicons?domain=blogspot.com&sz=64" data-alt2="https://api.faviconkit.com/blogspot.com/64" alt=""><span class="icon">📓</span></span><span class="label">Blogspot<span class="meta">Scratchpad for ideas</span></span></a></li>
@@ -173,8 +173,7 @@
         <h2>Talk to my Assistant</h2>
         <p class="copy">
           Have a question I haven’t covered yet? The assistant knows which links are real and where to find the rest.<br>
-          <a class="cta" href="https://jessica-lavrov.github.io" target="_blank" rel="noopener">Chat with the Assistant</a><br>
-          <span class="note">Tip: when that site opens, scroll to the bottom.</span>
+          <a class="cta" href="https://jessica-lavrov.github.io" target="_blank" rel="noopener">Chat with the Assistant</a>
         </p>
       </article>
 
@@ -217,7 +216,7 @@
           <li><a class="link" href="https://te.legra.ph/Jessica-Lavrov-Official-Profile--Media-Kit-10-09" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/te.legra.ph.ico" data-alt1="https://www.google.com/s2/favicons?domain=te.legra.ph&sz=64" data-alt2="https://api.faviconkit.com/te.legra.ph/64" alt=""><span class="icon">📄</span></span><span class="label">Telegraph Profile<span class="meta">Fast-loading profile snapshot</span></span></a></li>
           <li><a class="link" href="https://jessica-lavrov.gitbook.io/jessica-lavrov-gitbook/" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/gitbook.io.ico" data-alt1="https://www.google.com/s2/favicons?domain=gitbook.io&sz=64" data-alt2="https://api.faviconkit.com/gitbook.io/64" alt=""><span class="icon">📚</span></span><span class="label">GitBook<span class="meta">Structured docs and references</span></span></a></li>
           <li><a class="link" href="https://hackmd.io/@jessicalavrov/ByzVitrpxe" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/hackmd.io.ico" data-alt1="https://www.google.com/s2/favicons?domain=hackmd.io&sz=64" data-alt2="https://api.faviconkit.com/hackmd.io/64" alt=""><span class="icon">📝</span></span><span class="label">HackMD<span class="meta">Notes, drafts, and live docs</span></span></a></li>
-          <li><a class="link" href="https://jessicalavrov.carrd.co" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/carrd.co.ico" data-alt1="https://www.google.com/s2/favicons?domain=carrd.co&sz=64" data-alt2="https://api.faviconkit.com/carrd.co/64" alt=""><span class="icon">🪧</span></span><span class="label">Carrd<span class="meta">One-page profile</span></span></a></li>
+          <li><a class="link" href="https://jessicalavrov.carrd.co" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/carrd.co.ico" data-alt1="https://www.google.com/s2/favicons?domain=carrd.co&sz=64" data-alt2="https://api.faviconkit.com/carrd.co/64" alt=""><span class="icon">🪧</span></span><span class="label">Carrd<span class="meta">One page profile</span></span></a></li>
           <li><a class="link" href="https://keybase.io/jessicalavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/keybase.io.ico" data-alt1="https://www.google.com/s2/favicons?domain=keybase.io&sz=64" data-alt2="https://api.faviconkit.com/keybase.io/64" alt=""><span class="icon">🔐</span></span><span class="label">Keybase<span class="meta">Identity proofs and keys</span></span></a></li>
           <li><a class="link" href="https://wellfound.com/u/jessica-lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/wellfound.com.ico" data-alt1="https://www.google.com/s2/favicons?domain=wellfound.com&sz=64" data-alt2="https://api.faviconkit.com/wellfound.com/64" alt=""><span class="icon">🏢</span></span><span class="label">Wellfound<span class="meta">Startup network profile</span></span></a></li>
           <li><a class="link" href="https://www.f6s.com/jessica-lavrov" target="_blank" rel="noopener"><span class="bubble"><img class="logo" src="https://icons.duckduckgo.com/ip3/f6s.com.ico" data-alt1="https://www.google.com/s2/favicons?domain=f6s.com&sz=64" data-alt2="https://api.faviconkit.com/f6s.com/64" alt=""><span class="icon">🧩</span></span><span class="label">F6S<span class="meta">Founder profile and programs</span></span></a></li>
@@ -226,12 +225,12 @@
         </ul>
       </article>
 
-      <article class="card span8">
+      <article class="card span12">
         <h2>Articles on JessicaLavrov.com</h2>
         <ul class="links onecol">
           <li>
             <a class="link" href="https://jessicalavrov.com/simulation-2025/">
-              <span class="bubble"><span class="icon">🧪</span></span>
+              <span class="bubble"><img class="logo" src="https://2.gravatar.com/avatar/cd3fbe17f1bf77fa207a82a74709f11c0e55fe56d032d3056a29166d42672a60?s=64" alt=""></span>
               <span class="label">
                 AI Is The Cheat Code To The Matrix You Were Not Supposed To Find
                 <span class="meta">New on-site article • Published Oct 9, 2025</span>
@@ -240,7 +239,7 @@
           </li>
           <li>
             <a class="link" href="https://jessicalavrov.com/bitcoin-ai-utopia/">
-              <span class="bubble"><span class="icon">₿</span></span>
+              <span class="bubble"><img class="logo" src="https://2.gravatar.com/avatar/cd3fbe17f1bf77fa207a82a74709f11c0e55fe56d032d3056a29166d42672a60?s=64" alt=""></span>
               <span class="label">
                 Can Hard Money and AI Make Central Planning Work?
                 <span class="meta">On-site article • Published Oct 4, 2025</span>
@@ -249,7 +248,7 @@
           </li>
           <li>
             <a class="link" href="https://jessicalavrov.com/about/">
-              <span class="bubble"><span class="icon">📝</span></span>
+              <span class="bubble"><img class="logo" src="https://2.gravatar.com/avatar/cd3fbe17f1bf77fa207a82a74709f11c0e55fe56d032d3056a29166d42672a60?s=64" alt=""></span>
               <span class="label">About Jessica Lavrov<span class="meta">On-site article • Published Oct 3, 2025</span></span>
             </a>
           </li>
@@ -260,10 +259,9 @@
       <article class="card span4">
         <h2>Consulting & Services</h2>
         <p class="copy">Personal cybersecurity, privacy settings, data broker removals, device hardening, doxxing and impersonation response, reputation cleanup, and AI automations. I also help with custom AI workers, private RAG search, and friendly on device assistants.</p>
-        <p class="copy">Email <a href="mailto:pr@jessicalavrov.com">pr@jessicalavrov.com</a>. Messages are triaged by an AI for speed and clarity.</p>
       </article>
 
-      <article class="card span12">
+      <article class="card span8">
         <h2>Interests</h2>
         <ul class="chips">
           <li class="chip">👗 fashion</li>
@@ -295,7 +293,7 @@
 
     <section class="card span12" style="margin-top:16px">
       <h2>One more thing</h2>
-      <p class="copy">If you are still scrolling, you are my kind of person. Bookmark this page, then say hi on my socials or ask the <a href="https://jessica-lavrov.github.io" target="_blank" rel="noopener">assistant</a> anything.</p>
+      <p class="copy">If you are still scrolling, you are my kind of person. Bookmark this page, then say hi on my socials or ask the assistant anything.</p>
     </section>
 
     <p class="footer">© <span id="y"></span> Jessica Lavrov • all official links above • hosted on Cloudflare</p>
